@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/dishes"
+  app:startDestination="@id/dishesFragment2">
+  <fragment
+    android:id="@+id/dishesFragment2"
+    android:name="com.emedinaa.kotlinapp.DishesFragment"
+    android:label="fragment_dishes"
+    tools:layout="@layout/fragment_dishes" >
+    <action
+      android:id="@+id/action_dishesFragment2_to_dishFragment3"
+      app:destination="@id/dishFragment3" />
+  </fragment>
+  <fragment
+    android:id="@+id/dishFragment3"
+    android:name="com.emedinaa.kotlinapp.DishFragment"
+    android:label="DishFragment" />
+</navigation>
